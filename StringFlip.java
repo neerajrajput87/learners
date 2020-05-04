@@ -3,6 +3,7 @@ public class StringFlip {
   String s = "WelcomeToGithub";
   StringFlip obj = new StringFlip();
   obj.stringFlipUsingXOR(s);
+  System.out.println();
   obj.stringFlip(s);
  } 
  
