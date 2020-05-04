@@ -3,7 +3,6 @@ public class StringFlip {
   String s = "WelcomeToGithub";
   StringFlip obj = new StringFlip();
   obj.stringFlipUsingXOR(s);
-  System.out.println();
   obj.stringFlip(s);
  } 
  
@@ -12,9 +11,7 @@ public class StringFlip {
   for(int i = 0; i < c.length; i++) {
     c[i] ^= 32;
   }
-  for(char ch: c) {
-    System.out.print(ch);
-  }
+  System.out.println(String.valueOf(c));
  }
  
  private void stringFlip(String s) {
@@ -25,8 +22,6 @@ public class StringFlip {
      else if(ch[i] >= 'A' && ch[i] <= 'Z')
       c[i] = (char)(c[i] + 32);
   }
-  for(char ch: c) {
-    System.out.print(ch);
-  }
+  System.out.println(String.valueOf(c));
  }
 }
